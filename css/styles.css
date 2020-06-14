@@ -146,7 +146,7 @@ img {
 .hero {
   text-align: center;
   height: 600px;
-  width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -287,13 +287,13 @@ section.occupation {
   line-height: 1.14;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .description {
-  display: flex;
   position: absolute;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   bottom: 0;
   width: 100%;
   height: 70px;
@@ -416,8 +416,9 @@ section.customer {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  fill: #afb1b8;
 
-  transition-property: color, border;
+  transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -425,7 +426,7 @@ section.customer {
 .customer-link:hover,
 .customer-link:focus {
   border: 1px solid var(--akcent-color);
-  --color3: var(--akcent-color);
+  fill: var(--akcent-color);
 }
 
 /* Подвал */
@@ -710,7 +711,6 @@ ul.choice-card {
 
 .card-text {
   position: relative;
-  display: block;
   overflow: hidden;
 }
 
